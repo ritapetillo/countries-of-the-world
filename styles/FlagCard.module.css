@@ -1,0 +1,47 @@
+.FlagCard {
+  margin-top: 50px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  min-height: 420px;
+  background-color: var(--color-elements);
+  color: var(--color-text);
+  width: 90vw;
+  border-radius: 20px;
+  max-width: 330px;
+  box-shadow: var(--card-shadow);
+}
+.FlagCard:hover {
+  transform: scaleZ(10) scaleX(1.02) scaleY(1.02);
+}
+.FlagCard__image {
+  flex: 1;
+  height: 170px;
+}
+.FlagCard__image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.FlagCard__details {
+  flex: 1;
+  padding: 0px 30px 60px 30px;
+}
+.FlagCard__details bold {
+  font-weight: 800;
+}
+
+@media screen and (min-width: 768px) {
+  .FlagCard {
+    margin: 30px 30px;
+    max-width: 270px;
+    max-height: 370px;
+  }
+  .FlagCard__details {
+    flex: 1;
+    padding: 0px 30px 0px 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.input__container {
+  display: flex;
+  width: 90vw;
+  background-color: var(--color-elements);
+  height: 60px;
+  border-radius: 7px;
+  margin: 30px auto;
+  align-items: center;
+  padding-left: 30px;
+  color: var(--color-text);
+}
+.input__container input {
+  border: none;
+  flex: 1;
+  height: 60px;
+  outline: none;
+  margin-left: 30px;
+  background-color: var(--color-elements);
+}
+.input__container input::placeholder {
+  color: var(--color-text);
+}
+
+.input__container .MuiSvgIcon_root {
+  fill: white;
+}

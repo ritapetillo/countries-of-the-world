@@ -1,0 +1,110 @@
+.country {
+  margin-top: 50px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.country__btn {
+  margin: 30px 10px 30px 0;
+  padding: 10px 15px;
+  max-width: 135px;
+  max-height: 40px;
+  background-color: var(--color-elements);
+  color: var(--color-text);
+  border-radius: 7px;
+  text-align: center;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.country__btn > span {
+  margin-left: 0px;
+  flex: 1;
+}
+.country__image {
+  object-fit: cover;
+  text-align: center;
+}
+.country__image img {
+  width: 100%;
+}
+.country__details {
+  flex: 1;
+  margin-top: 50px;
+  padding-bottom: 30px;
+}
+.country__details h3 {
+  margin-bottom: 30px;
+}
+.country__details bold {
+  font-weight: 800;
+}
+
+.country__details2 {
+  margin-top: 40px;
+}
+.country__borders {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.country__borders h3 {
+  width: 100%;
+}
+
+.country__borders .country__btn {
+  margin: 10px 10px;
+  text-align: center;
+}
+
+.no_arrow_end + .no_arrow_end::before {
+  display: inline-block;
+  white-space: pre;
+  content: ", ";
+}
+
+@media screen and (min-width: 768px) {
+  .country {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 8vw;
+    align-items: top;
+  }
+  .country > .country__btn {
+    grid-column: 1/3;
+  }
+  .country__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr, 3fr, 1fr);
+    margin-top: 0;
+    column-gap: 20px;
+  }
+  .country__details h3 {
+    grid-column: 1/3;
+    margin-bottom: 20px;
+  }
+  .country__borders {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+  }
+  .country__borders > h3 {
+    width: fit-content;
+    margin-right: 10px;
+  }
+  .country__details2 {
+    margin-top: 0px;
+  }
+}

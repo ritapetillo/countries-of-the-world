@@ -1,0 +1,9 @@
+:root {
+  --color-dark-elements-dark-blue: hsl(209, 23%, 22%);
+  --color-dark-bg-veryDark-blue: hsl(207, 26%, 17%);
+  --color-light-text-verydark-blue: hsl(200, 15%, 8%);
+  --color-light-bg-verydark-gray: hsl(200, 15%, 8%);
+  --color-dark-text-white: #fff;
+  --color-light-elements-whte: #fff;
+  --color-light-input-gray: hsl(0, 0%, 52%);
+}

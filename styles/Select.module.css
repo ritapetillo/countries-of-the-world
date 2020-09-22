@@ -1,0 +1,48 @@
+.select {
+  width: 55vw;
+  z-index: 10;
+  position: relative;
+}
+
+.select__select {
+  display: flex;
+  justify-content: space-between;
+  width: 55vw;
+  height: 50px;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
+  align-items: center;
+  padding-right: 30px;
+  background-color: var(--color-elements);
+  border-radius: 7px;
+  padding-left: 30px;
+}
+.select__options {
+  height: fit-content;
+  padding: 10px;
+  flex-direction: column;
+  color: var(--color-text);
+  margin-top: 5px;
+  background-color: var(--color-elements);
+  border-radius: 7px;
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+}
+
+.select__options span {
+  padding: 7px 30px;
+}
+
+.select__options span:hover {
+  opacity: 75%;
+  transform: scaleZ(1.2);
+}
+.select__hidden {
+  display: none;
+}
+.select__visible {
+  display: flex;
+}
