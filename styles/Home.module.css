@@ -14,6 +14,13 @@
 
     width: 100vw;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+  }
+  .container__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
   }
 }

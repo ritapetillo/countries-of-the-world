@@ -46,3 +46,13 @@
 .select__visible {
   display: flex;
 }
+
+@media screen and (min-width: 768px) {
+  .select {
+    width: 190px;
+    margin-right: 4vw;
+  }
+  .select__select {
+    max-width: 200px;
+  }
+}

@@ -50,6 +50,7 @@ export default function Home({ countryList }) {
           removeFilter={removeFilter}
         />
       </div>
+
       {countries.map((country, x) => (
         <Link
           href={{
